@@ -41,7 +41,7 @@ public class recursion{
     }
 
     public static void helper(int n, int sum, ArrayList<Integer> L){
-        if(n >=0){
+        if(n >0){
           helper(n - 1, sum + n, L);
           helper(n - 1, sum, L);
         } else L.add(sum);
