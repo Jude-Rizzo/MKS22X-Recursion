@@ -30,14 +30,16 @@ public class recursion{
 
     /*As Per classwork*/
     public static ArrayList<Integer> makeAllSums(int n){
-
+      ArrayList<Integer> L = new ArrayList<Integer>();
+      helper(n, 0, L);
+      return L;
     }
 
-    public static helper(int n, int sum, ArrayList<Integer> L){
+    public static void helper(int n, int sum, ArrayList<Integer> L){
         if(n >=0){
           helper(n - 1, sum + n, L);
           helper(n - 1, sum, L);
-        }
+        } else L.add(sum);
     }
 
 }
