@@ -83,6 +83,8 @@ public class recursion{
       }
     }
 
+  
+
 
     //testcase must be a valid index of your input/output array
     public static void testSqrt(int testcase){
@@ -120,6 +122,9 @@ public class recursion{
       //testing testSqr
       for(int i = 0; i < 5; i++){
         testSqrt(i);
+      }
+      for(int i = 0; i < 7; i++){
+        testFib(i);
       }
 }
 
